@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@300&family=Lato:wght@400;700&display=swap");
+
+body {
+  background-image: url("/sandbox/src/archivos/imagenes/backgroundLight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.App {
+  padding: 0.5em;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 75px;
+  font-family: "Hepta Slab", serif;
+  color: black;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  h1 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
