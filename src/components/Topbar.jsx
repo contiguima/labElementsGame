@@ -1,12 +1,14 @@
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../stylesheets/topbar.css";
 import moonLogo from "../archivos/logos/moon.png";
 
 const Topbar = (props) => {
+  const navigate = useNavigate();
+
   if (props.backTo != null) {
     return (
       <div className="topbar">
-        <button className="backBtn" /*onClick Navigate to props.backTo*/>
+        <button className="backBtn" onClick={() => navigate(props.backTo)}>
           {" "}
           Volver{" "}
         </button>

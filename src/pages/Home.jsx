@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import Topbar from "../components/Topbar";
 import "../stylesheets/home.css";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Topbar />
@@ -13,8 +15,12 @@ const Home = () => {
           conocimiento
         </p>
         <div className="btnContainer">
-          <button className="btnHome">APRENDER</button>
-          <button className="btnHome">JUGAR</button>
+          <button className="btnHome" onClick={() => navigate("/aprender")}>
+            APRENDER
+          </button>
+          <button className="btnHome" onClick={() => navigate("/jugar")}>
+            JUGAR
+          </button>
         </div>
       </div>
     </>
