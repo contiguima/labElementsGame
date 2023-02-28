@@ -15,7 +15,7 @@ body {
 h1 {
   font-style: normal;
   font-weight: 300;
-  font-size: 60px;
+  font-size: clamp(26px, 10vh, 60px);
   line-height: 75px;
   font-family: "Hepta Slab", serif;
   color: black;
@@ -29,6 +29,8 @@ p {
   line-height: 26px;
   color: black;
 }
+
+/*
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
@@ -47,4 +49,4 @@ p {
     font-size: 12px;
     line-height: 14px;
   }
-}
+}*/

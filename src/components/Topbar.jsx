@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "../stylesheets/topbar.css";
 import moonLogo from "../archivos/logos/moon.png";
+import arrowLogo from "../archivos/logos/arrowBackBtn.png";
 
 const Topbar = (props) => {
   const navigate = useNavigate();
@@ -10,7 +11,7 @@ const Topbar = (props) => {
       <div className="topbar">
         <button className="backBtn" onClick={() => navigate(props.backTo)}>
           {" "}
-          Volver{" "}
+          <img src={arrowLogo} alt="arrow" />
         </button>
         <button className="darkMode">
           <img src={moonLogo} alt="moon,logo" />
