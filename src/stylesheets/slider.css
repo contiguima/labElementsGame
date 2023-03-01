@@ -1,0 +1,19 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.prev,
+.next {
+  background: rgb(219, 219, 219);
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

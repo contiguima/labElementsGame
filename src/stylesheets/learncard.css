@@ -1,9 +1,8 @@
 .learnCard {
   display: flex;
-  gap: 2em;
+
   flex-direction: row;
   max-width: 900px;
-  max-height: 600px;
   background: #f5f5f5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -14,9 +13,40 @@
 
 .learnText h1 {
   font-size: 40px;
+  line-height: 60px;
 }
 .learnText p {
   font-weight: 400;
   font-size: 22px;
   line-height: 30px;
+}
+
+.cardImage {
+  max-width: 450px;
+}
+
+@media screen and (max-width: 850px) {
+  .learnCard {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+    background: #f5f5f5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .cardImage {
+    max-width: 230px;
+  }
+
+  .learnText h1 {
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .learnText p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
 }

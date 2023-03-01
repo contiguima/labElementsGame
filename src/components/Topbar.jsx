@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "../stylesheets/topbar.css";
-import moonLogo from "../archivos/logos/moon.png";
-import arrowLogo from "../archivos/logos/arrowBackBtn.png";
+import moonLogo from "../assets/logos/moon.png";
+import arrowLogo from "../assets/logos/arrowBackBtn.png";
 
 const Topbar = (props) => {
   const navigate = useNavigate();
