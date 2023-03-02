@@ -1,6 +1,5 @@
 .learnCard {
   display: flex;
-
   flex-direction: row;
   max-width: 900px;
   background: #f5f5f5;

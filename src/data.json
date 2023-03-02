@@ -1,34 +1,42 @@
 [
   {
     "title": "Erlenmeyer",
-    "description": " Recipiente de vidrio que se utiliza en los laboratorios, tiene forma de cono y tiene un cuello cilíndrico, es plano por la base. Se utiliza para calentar líquidos cuando hay peligro de pérdida por evaporación."
+    "description": " Recipiente de vidrio que se utiliza en los laboratorios, tiene forma de cono y tiene un cuello cilíndrico, es plano por la base. Se utiliza para calentar líquidos cuando hay peligro de pérdida por evaporación.",
+    "image": "erlenmeyerLight"
   },
   {
     "title": "Probeta",
-    "description": "Este pequeño tubo transparente, el cual cuenta con una base que permite apoyarlo, y tiene como principal función el de medir el volumen de un líquido o de un sólido (por el principio de Arquímedes)."
+    "description": "Este pequeño tubo transparente, el cual cuenta con una base que permite apoyarlo, y tiene como principal función el de medir el volumen de un líquido o de un sólido (por el principio de Arquímedes).",
+    "image": "probetaLight"
   },
   {
     "title": "Tubo de ensayo",
-    "description": "Por lo general se le vierten líquidos, soluciones o muestras que analizar o con las que experimentar. Es más pequeño que la probeta promedio, y es más fácil de transportar."
+    "description": "Por lo general se le vierten líquidos, soluciones o muestras que analizar o con las que experimentar. Es más pequeño que la probeta promedio, y es más fácil de transportar.",
+    "image": "tuboEnsayoLight"
   },
   {
     "title": "Microscopio",
-    "description": "El microscopio ha sido una herramienta clave en la investigación científica, permitiendo examinar la materia a un nivel indistinguible al ojo humano y logrando avances significativos en biología y medicina."
+    "description": "El microscopio ha sido una herramienta clave en la investigación científica, permitiendo examinar la materia a un nivel indistinguible al ojo humano y logrando avances significativos en biología y medicina.",
+    "image": "microscopioLight"
   },
   {
     "title": "Placa de Petri",
-    "description": " Pequeño recipiente redondo, transparente y con tapa, que se emplea habitualmente con el fin de colocar muestras de tejidos, bacterias y células para posteriormente generar cultivos."
+    "description": " Pequeño recipiente redondo, transparente y con tapa, que se emplea habitualmente con el fin de colocar muestras de tejidos, bacterias y células para posteriormente generar cultivos.",
+    "image": "placaPetriLight"
   },
   {
     "title": "Bureta",
-    "description": " La bureta permite determinar el volumen de un líquido o solución a la par que cuenta con una manija o llave de paso para permitir la regulación del paso del líquido."
+    "description": " La bureta permite determinar el volumen de un líquido o solución a la par que cuenta con una manija o llave de paso para permitir la regulación del paso del líquido.",
+    "image": "buretaLight"
   },
   {
     "title": "Embudo",
-    "description": " Permiten mezclar de manera controlada los diferentes compuestos. Además, son útiles para separar sólidos de líquidos con mayor eficiencia."
+    "description": " Permiten mezclar de manera controlada los diferentes compuestos. Además, son útiles para separar sólidos de líquidos con mayor eficiencia.",
+    "image": "embudoLight"
   },
   {
     "title": "Termómetro",
-    "description": " Conocer la temperatura a la que está una sustancia o muestra puede ser fundamental para poder estudiarla correctamente o incluso para poder preservarla."
+    "description": " Conocer la temperatura a la que está una sustancia o muestra puede ser fundamental para poder estudiarla correctamente o incluso para poder preservarla.",
+    "image": "termometroLight"
   }
 ]
