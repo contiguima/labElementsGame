@@ -1,6 +1,8 @@
 import "../stylesheets/playcard.css";
+import { useState, useEffect } from "react";
 
 const PlayCard = (props) => {
+  const [puntaje, setPuntaje] = useState(0);
   return (
     <div className="playContainer">
       <h1>Puntaje: </h1>
