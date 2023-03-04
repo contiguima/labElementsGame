@@ -1,19 +1,14 @@
 import Topbar from "../components/Topbar";
 import PlayCard from "../components/PlayCard";
 import erlenmeyerEj from "../assets/images/erlenmeyerLight.png";
-import Slider from "../components/Slider";
-
+import "../stylesheets/jugar.css";
 const Jugar = () => {
-  const playCardsArr = [
-    <PlayCard title="Prueba" imageLight={erlenmeyerEj} />,
-    <PlayCard title="Prueba" imageLight={erlenmeyerEj} />
-  ];
   return (
     <>
       {" "}
       <Topbar backTo="/" />
-      <div className="sliderCarr">
-        <Slider cards={playCardsArr} />
+      <div className="game">
+        <PlayCard title="Prueba" imageLight={erlenmeyerEj} />,
       </div>
     </>
   );
