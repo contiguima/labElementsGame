@@ -42,6 +42,28 @@ p {
   cursor: pointer;
   background-color: #949494;
 }
+.endGameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  max-width: 900px;
+  max-height: 600px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.endGameContainer h1 {
+  font-size: 40px;
+}
+.endGameContainer h3 {
+  font-size: 30px;
+  font-family: "Lato";
+}
+
 @media screen and (max-width: 850px) {
   .playCard {
     display: flex;
@@ -64,17 +86,17 @@ p {
     line-height: 17px;
   }
 
-  .correct,
-  .correct:hover {
-    background-color: #2f922f;
-  }
-
-  .incorrect,
-  .incorrect:hover {
-    background-color: #ff3333;
-  }
-
   .cardImage {
     max-width: 230px;
+  }
+  .endGameContainer h1 {
+    font-size: 30px;
+  }
+
+  .endGameContainer h3 {
+    font-size: 20px;
+  }
+  .endGameContainer p {
+    font-size: 14px;
   }
 }

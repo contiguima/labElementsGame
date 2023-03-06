@@ -10,9 +10,10 @@ const PlayCard = (props) => {
 
   function handleAnswerSubmit(isCorrect, e) {
     // añadir puntuación
-    if (isCorrect) setPuntaje(puntaje + 1);
-    // añadir estilos de pregunta
-    e.target.classList.add(isCorrect ? "correct" : "incorrect");
+    if (isCorrect) {
+      setPuntaje(puntaje + 1);
+    }
+
     // cambiar a la siguiente pregunta
 
     setTimeout(() => {
@@ -23,14 +24,34 @@ const PlayCard = (props) => {
       }
     }, 1500);
   }
+  if (isFinished) {
+    return (
+      <>
+        <div className="endGameContainer">
+          <h1>Juego terminado</h1>
+          <h3>
+            {" "}
+            Tu puntaje fue de {puntaje} sobre {questions.length} preguntas
+          </h3>
+          <p>
+            {" "}
+            {puntaje > questions.length / 2
+              ? "¡Excelente trabajo!"
+              : "¡Sigue practicando!"}
+          </p>
+        </div>
+      </>
+    );
+  }
 
   return (
     <div className="playContainer">
       <h1>Puntaje: {puntaje}</h1>
+
       <div className="playCard">
         <img
           src={images[questions[preguntaActual].image]}
-          alt={props.title}
+          alt={questions[preguntaActual].image}
           className="cardImage"
         />
         <div className="playOptions">
