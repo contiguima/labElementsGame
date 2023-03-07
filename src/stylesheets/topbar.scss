@@ -1,0 +1,77 @@
+.topbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+@mixin btnTopBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+}
+
+.darkModeLight, .darkModeDark{
+  margin-left: auto;
+  align-self: center;
+
+}
+.darkModeLight, .backBtnLight
+ {
+  @include btnTopBar;  
+  background-color: #d9d9d9;
+  
+}
+
+.darkModeDark, .backBtnDark {
+  @include btnTopBar;
+  background-color: black;
+  
+}
+.darkModeLight:hover {
+  background-color: #949494;
+}
+
+.darkModeDark:hover{
+  background-color: #262626;
+}
+
+.backBtnLight:hover {
+  width: 170px;
+  border-radius: 60px;
+  cursor: pointer;
+  background-color: #949494;
+  flex-direction: row-reverse;
+  gap: 0.8em;
+}
+
+.backBtnLight:hover::before {
+  content: "VOLVER";
+  color: #f5f5f5;
+  font-size: 14px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.backBtnDark:hover {
+  width: 170px;
+  border-radius: 60px;
+  cursor: pointer;
+  background-color: black;
+  flex-direction: row-reverse;
+  gap: 0.8em;
+}
+
+.backBtnDark:hover::before {
+  content: "VOLVER";
+  color: #f5f5f5;
+  font-size: 14px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
