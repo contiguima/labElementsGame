@@ -1,13 +1,19 @@
 import { useNavigate } from "react-router-dom";
 import Topbar from "../components/Topbar";
-import "../stylesheets/home.css";
-
+import "../stylesheets/home.scss";
+import { ThemeContext } from "../context/themeContext";
+import { useContext } from "react";
 const Home = () => {
+  const { mode } = useContext(ThemeContext);
   const navigate = useNavigate();
   return (
     <>
       <Topbar />
-      <div className="homeComponent">
+      <div
+        className={
+          mode === "light" ? "homeComponentLight" : "homeComponentDark"
+        }
+      >
         <h1>LabElements</h1>
         <p>
           {" "}
@@ -15,10 +21,16 @@ const Home = () => {
           conocimiento
         </p>
         <div className="btnContainer">
-          <button className="btnHome" onClick={() => navigate("/aprender")}>
+          <button
+            className={mode === "light" ? "btnHomeLight" : "btnHomeDark"}
+            onClick={() => navigate("/aprender")}
+          >
             APRENDER
           </button>
-          <button className="btnHome" onClick={() => navigate("/jugar")}>
+          <button
+            className={mode === "light" ? "btnHomeLight" : "btnHomeDark"}
+            onClick={() => navigate("/jugar")}
+          >
             JUGAR
           </button>
         </div>

@@ -5,9 +5,8 @@
   flex-direction: row;
 }
 
-.prev,
-.next {
-  background: rgb(219, 219, 219);
+@mixin arrowBtn{
+  
   border: none;
   padding: 0.5rem 0.5rem;
   border-radius: 100%;
@@ -16,9 +15,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+.arrowBtnLight{
+  @include arrowBtn;
+  background: rgb(219, 219, 219);
 }
 
-.prev:hover,
-.next:hover {
-  background-color: #949494;
+.arrowBtnDark{
+  @include arrowBtn;
+  background: black;
+}
+
+.arrowBtnLight:hover{
+  background-color: #999999;
+}
+.arrowBtnDark:hover{
+  background-color: #222222;
 }

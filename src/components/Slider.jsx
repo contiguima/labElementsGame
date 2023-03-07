@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import "../stylesheets/slider.css";
+import "../stylesheets/slider.scss";
 import arrowPrev from "../assets/logos/arrowPrev.png";
 import arrowNext from "../assets/logos/arrowNext.png";
-
+import { ThemeContext } from "../context/themeContext";
+import { useContext } from "react";
 function Slider(props) {
+  const { mode } = useContext(ThemeContext);
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const cards = props.cards;
 
   const handlePrev = () => {
@@ -18,11 +19,17 @@ function Slider(props) {
 
   return cards.length > 0 ? (
     <div className="slider">
-      <button className="prev" onClick={handlePrev}>
+      <button
+        className={mode === "light" ? "arrowBtnLight" : "arrowBtnDark"}
+        onClick={handlePrev}
+      >
         <img src={arrowPrev} alt="arrow" />
       </button>
       {cards[currentIndex]}
-      <button className="next" onClick={handleNext}>
+      <button
+        className={mode === "light" ? "arrowBtnLight" : "arrowBtnDark"}
+        onClick={handleNext}
+      >
         <img src={arrowNext} alt="arrow" />
       </button>
     </div>
